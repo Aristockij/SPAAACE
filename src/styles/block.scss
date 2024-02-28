@@ -15,11 +15,10 @@
     border-top: 1px solid black;
     @media(max-width: $tablet){
       padding: 0 15px;
-      max-height: calc(525px - 15vw);
     }
     @media(max-width: $mobile){
-      max-height: calc(425px - 15vw);
-      padding: 0 15px 150px 15px;
+      height: auto;
+      padding: 200px 15px 150px 15px;
     }
     &:before {
       content: '';
@@ -61,7 +60,8 @@
     margin-bottom: 24px;
     letter-spacing: 3.2px;
     @media(max-width: $mobile){
-      font-size: 6.5vw;
+      font-size: 28px;
+      text-align: center;
       letter-spacing: 2px;
     }
   }
