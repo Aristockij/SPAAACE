@@ -2,7 +2,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 let selectors = document.querySelectorAll('.acc');
 
-const scroll = new LocomotiveScroll({
+new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     smoothMobile: true,
