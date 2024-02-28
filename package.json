@@ -1,0 +1,20 @@
+{
+  "name": "spaaace",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel src/index.html --port 3000 --open chrome",
+    "build": "parcel build src/index.html --dist-dir build"
+  },
+  "author": "Kazenin.dev",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "^2.11.0",
+    "sass": "^1.71.1"
+  },
+  "dependencies": {
+    "locomotive-scroll": "^4.1.4"
+  }
+}
