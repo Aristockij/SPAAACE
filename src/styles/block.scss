@@ -114,13 +114,12 @@
     }
     &-bot{
       position: absolute;
-      bottom: 50px;
+      bottom: 0;
       right: 0;
       display: flex;
       justify-content: flex-end;
       img{
         width: 40%;
-        //height: 90%;
       }
     }
   }
