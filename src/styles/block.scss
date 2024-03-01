@@ -78,12 +78,18 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
     @media(max-width: $mobile){
       align-items: flex-start;
     }
-    video{
-      height: 100%;
+    &-video{
+      aspect-ratio: 1 / 1;
+      video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
     &-img{
       position: absolute;
@@ -108,12 +114,13 @@
     }
     &-bot{
       position: absolute;
-      bottom: 0;
+      bottom: 50px;
       right: 0;
       display: flex;
       justify-content: flex-end;
       img{
         width: 40%;
+        //height: 90%;
       }
     }
   }
