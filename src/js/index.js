@@ -2,16 +2,6 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 let selectors = document.querySelectorAll('.acc');
 
-new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    smoothMobile: true,
-    smartphone: {
-        smooth: true,
-    },
-    scrollFromAnywhere: true,
-});
-
 let img_bg = document.querySelectorAll('.acc-bg-img img');
 let img_bot = document.querySelectorAll('.acc-bg-bot img');
 let video_bg = document.querySelectorAll('.acc-bg-video');
@@ -25,26 +15,33 @@ function fullContentLoad(){
                 el.classList.add('active');
             })
             img_bg.forEach((el)=>{
-                el.setAttributeNodeNS('data-scroll');
+                el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', '4');
                 el.setAttribute('data-scroll-delay', '0.04');
-
             });
 
             img_bot.forEach((el)=>{
-                el.setAttributeNodeNS('data-scroll');
+                el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', '3.5');
                 el.setAttribute('data-scroll-delay', '0.17');
-
             });
 
             video_bg.forEach((el)=>{
-                el.setAttributeNodeNS('data-scroll');
+                el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', '2');
                 el.setAttribute('data-scroll-delay', '0.13');
             });
 
-        },1000)
+            new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true,
+                smoothMobile: true,
+                smartphone: {
+                    smooth: true,
+                },
+                scrollFromAnywhere: true,
+            });
+        },1000);
     })
 
 }
