@@ -121,10 +121,30 @@
       img{
         width: 60%;
       }
+      &_top{
+        left: 0;
+        top: 0;
+        display: block;
+        img{
+          width: 45%;
+        }
+      }
+      &_mid{
+        left: 50%;
+        top: 0;
+        display: block;
+      }
       &_left{
         left: 0;
         right: inherit;
         justify-content: flex-start;
+        bottom: 0;
+        img{
+          width: auto;
+        }
+      }
+      &-hand img{
+          width: 60%;
       }
     }
   }
