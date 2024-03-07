@@ -112,12 +112,19 @@
 
       }
     }
+    &__img{
+      position: absolute;
+      display: flex;
+
+      img{
+        width: 60%;
+      }
+    }
     &-bot{
       position: absolute;
       bottom: 0;
-      right: 0;
-      display: flex;
       justify-content: flex-end;
+      //right: 0;
       img{
         width: 60%;
       }
@@ -146,6 +153,22 @@
       &-hand img{
           width: 60%;
       }
+    }
+    //&-bot{
+    //  bottom: 0;
+    //}
+    &-right{
+      right: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-left{
+      left: 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+    &-top{
+      top: 0;
     }
   }
 }
