@@ -15,15 +15,20 @@ function fullContentLoad(){
                 el.classList.add('active');
             })
             img_bg.forEach((el)=>{
+
+
                 el.setAttribute('data-scroll','');
-                el.setAttribute('data-scroll-speed', '4');
+                el.setAttribute('data-scroll-speed', `3`);
                 el.setAttribute('data-scroll-delay', '0.04');
             });
 
             img_bot.forEach((el)=>{
+                let speedVal = Math.floor(Math.random() * (3 - 1) + 1);
+                let delayVal = Math.random() * (0.18 - 0.15) + 0.15;
+
                 el.setAttribute('data-scroll','');
-                el.setAttribute('data-scroll-speed', '3.5');
-                el.setAttribute('data-scroll-delay', '0.17');
+                el.setAttribute('data-scroll-speed', `${speedVal}`);
+                el.setAttribute('data-scroll-delay', `${delayVal}`);
             });
 
             video_bg.forEach((el)=>{
@@ -36,8 +41,16 @@ function fullContentLoad(){
                 el: document.querySelector('[data-scroll-container]'),
                 smooth: true,
                 smoothMobile: true,
-                smartphone: {
-                    smooth: true,
+                getDirection: true,
+                mobile: {
+                    breakpoint: 0,
+                    smooth: false,
+                    getDirection: true,
+                },
+                tablet: {
+                    breakpoint: 0,
+                    smooth: false,
+                    getDirection: true,
                 },
                 scrollFromAnywhere: true,
             });

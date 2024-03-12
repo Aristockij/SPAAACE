@@ -151,8 +151,11 @@
           width: auto;
         }
       }
-      &-hand img{
+      &-hand{
+        bottom: -250px;
+        img{
           width: 60%;
+        }
       }
     }
     //&-bot{
