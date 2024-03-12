@@ -15,17 +15,28 @@ function fullContentLoad(){
                 el.classList.add('active');
             })
             img_bg.forEach((el)=>{
+                let speedVal = '3'
+                let delayVal = '0.04'
 
+                console.log(window.innerWidth)
+                if(window.innerWidth < 650){
+                    speedVal = 0;
+                    delayVal = 0
+                }
 
                 el.setAttribute('data-scroll','');
-                el.setAttribute('data-scroll-speed', `3`);
-                el.setAttribute('data-scroll-delay', '0.04');
+                el.setAttribute('data-scroll-speed', `${speedVal}`);
+                el.setAttribute('data-scroll-delay', `${delayVal}`);
             });
 
             img_bot.forEach((el)=>{
                 let speedVal = Math.floor(Math.random() * (3 - 1) + 1);
                 let delayVal = Math.random() * (0.18 - 0.15) + 0.15;
-
+                console.log(window.innerWidth)
+                if(window.innerWidth < 650){
+                    speedVal = 0;
+                    delayVal = 0
+                }
                 el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', `${speedVal}`);
                 el.setAttribute('data-scroll-delay', `${delayVal}`);
@@ -40,18 +51,7 @@ function fullContentLoad(){
             new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
                 smooth: true,
-                smoothMobile: true,
-                getDirection: true,
-                mobile: {
-                    breakpoint: 0,
-                    smooth: false,
-                    getDirection: true,
-                },
-                tablet: {
-                    breakpoint: 0,
-                    smooth: false,
-                    getDirection: true,
-                },
+                smoothMobile: false,
                 scrollFromAnywhere: true,
             });
         },1000);

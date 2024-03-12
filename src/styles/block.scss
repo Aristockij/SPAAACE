@@ -85,11 +85,11 @@
     }
     &-video{
       width: 100%;
-      //aspect-ratio: 1 / 1;
       video{
         height: 100%;
         width: 100%;
         object-fit: cover;
+        pointer-events: none;
       }
     }
     &-img{
@@ -101,6 +101,7 @@
       @media(max-width: $mobile){
         height: calc(100% - 4vh);
         transform: translateY(-50%);
+        top: 50%;
       }
 
       &>img{
@@ -158,9 +159,6 @@
         }
       }
     }
-    //&-bot{
-    //  bottom: 0;
-    //}
     &-right{
       right: 0;
       display: flex;
