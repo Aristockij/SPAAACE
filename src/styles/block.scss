@@ -126,7 +126,6 @@
       position: absolute;
       bottom: -150px;
       justify-content: flex-end;
-      //right: 0;
       img{
         width: 60%;
       }
@@ -154,6 +153,9 @@
       }
       &-hand{
         bottom: -250px;
+        @media(max-width: $mobile){
+          bottom: -150px;
+        }
         img{
           width: 60%;
         }
