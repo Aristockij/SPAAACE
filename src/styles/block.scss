@@ -1,3 +1,9 @@
+.parallax{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .acc{
   opacity: 0;
   transition: .3s;
@@ -101,6 +107,8 @@
       position: absolute;
       display: block;
       z-index: 2;
+      //@include parallax(.4);
+
       @media(max-width: $tablet){
         height: calc(100% - 25vh);
       }
