@@ -18,7 +18,6 @@ function fullContentLoad(){
                 let speedVal = '3'
                 let delayVal = '0.04'
 
-                console.log(window.innerWidth)
                 if(window.innerWidth < 650){
                     speedVal = 0;
                     delayVal = 0
@@ -32,7 +31,7 @@ function fullContentLoad(){
             img_bot.forEach((el)=>{
                 let speedVal = Math.floor(Math.random() * (3 - 1) + 1);
                 let delayVal = Math.random() * (0.18 - 0.15) + 0.15;
-                console.log(window.innerWidth)
+
                 if(window.innerWidth < 650){
                     speedVal = 0;
                     delayVal = 0
