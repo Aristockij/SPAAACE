@@ -223,6 +223,15 @@
         display: none !important;
         opacity: 0;
       }
+      &-cloud{
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        img{
+          right: 0;
+        }
+      }
     }
   }
 }
