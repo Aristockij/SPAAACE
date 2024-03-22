@@ -4,7 +4,7 @@ let selectors = document.querySelectorAll('.acc');
 
 let img_bg = document.querySelectorAll('.acc-bg-img img');
 let img_bot = document.querySelectorAll('.acc-bg-bot img');
-let video_bg = document.querySelectorAll('.acc-bg-video');
+let video_bg = document.querySelectorAll('.video-scroll');
 
 function fullContentLoad(){
     new Promise((resolve)=>{
@@ -14,7 +14,7 @@ function fullContentLoad(){
             selectors.forEach((el)=>{
                 el.classList.add('active');
             })
-            img_bg.forEach((el)=>{
+            img_bg.forEach((el) => {
                 let speedVal = '3'
                 let delayVal = '0.04'
 
