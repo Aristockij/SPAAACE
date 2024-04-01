@@ -49,7 +49,8 @@ function fullContentLoad(){
 
             new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
-                smooth: true,
+                smooth: false,
+                // smooth: true,
                 smoothMobile: false,
                 scrollFromAnywhere: true,
             });
