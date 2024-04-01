@@ -127,7 +127,7 @@
       @media(max-width: $mobile){
         height:100%;
         display: flex;
-        //align-items: flex-start;
+        align-items: flex-end;
         justify-content: center;
         margin-bottom: 0;
         width: 100%;
@@ -144,8 +144,8 @@
         z-index: 2;
         @media(max-width: $mobile){
           max-width: 300px;
-          width: 100%;
-          transform: translateY(50px);
+          width: 60%;
+          margin-bottom: -50px;
         }
       }
     }
