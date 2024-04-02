@@ -109,16 +109,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    box-sizing: border-box;
-    aspect-ratio: 16 / 9;
+    //aspect-ratio: 16 / 9;
     //overflow: hidden;
     @media(max-width: $mobile){
-      align-items: flex-start;
-      aspect-ratio: inherit;
+      //align-items: flex-start;
+      //aspect-ratio: inherit;
       //overflow: visible;
-      min-height: 430px;
+      //min-height: 430px;
       height: 430px;
-
     }
     &-container{
       position: absolute;
@@ -167,19 +165,10 @@
         margin-bottom: 0;
         //width: 100%;
         //padding: 0 15px;
-        //width: 64%;
+        width: 64%;
       }
-      &>picture{
-        @media(max-width: $mobile){
-          //height:100%;
-          //display: flex;
-          //align-items: flex-end;
-          //justify-content: center;
-          //margin-bottom: 0;
-          //width: 100%;
-          //padding: 0 15px;
-          width: 64%;
-        }
+
+
         &>img{
           position: relative;
           display: block;
@@ -191,11 +180,10 @@
           @media(max-width: $mobile){
             max-width: 300px;
             width: 100%;
-            //width: 64%;
             margin-bottom: -50px;
           }
         }
-      }
+
 
     }
     &__img{
