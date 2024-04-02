@@ -107,9 +107,11 @@
     }
     &-video{
       width: 100%;
+      height: 100%;
+      background: grey;
       @media(max-width: $mobile){
-        //display: none;
-        height: 430px;
+        display: block;
+
       }
       video{
         height: 100%;
