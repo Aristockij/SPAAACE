@@ -95,7 +95,7 @@
       align-items: flex-start;
       aspect-ratio: inherit;
       //overflow: visible;
-      height: 430px;
+      min-height: 430px;
     }
     &-container{
       position: absolute;
@@ -141,8 +141,9 @@
         align-items: flex-end;
         justify-content: center;
         margin-bottom: 0;
-        width: 100%;
-        padding: 0 15px;
+        //width: 100%;
+        //padding: 0 15px;
+        width: 64%;
       }
 
       &>img{
@@ -155,7 +156,8 @@
         z-index: 2;
         @media(max-width: $mobile){
           max-width: 300px;
-          width: 64%;
+          width: 100%;
+          //width: 64%;
           margin-bottom: -50px;
         }
       }
@@ -167,9 +169,10 @@
       @media(max-width: $mobile){
         display: none;
         opacity: 0;
+        width: 60%;
       }
       img{
-        width: 60%;
+        //width: 60%;
       }
     }
     &-bot{
