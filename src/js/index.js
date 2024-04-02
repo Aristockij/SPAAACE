@@ -18,10 +18,10 @@ function fullContentLoad(){
                 let speedVal = '3'
                 let delayVal = '0.04'
 
-                if(window.innerWidth < 650){
-                    speedVal = 0;
-                    delayVal = 0
-                }
+                // if(window.innerWidth < 650){
+                //     speedVal = 0;
+                //     delayVal = 0
+                // }
 
                 el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', `${speedVal}`);
@@ -32,10 +32,10 @@ function fullContentLoad(){
                 let speedVal = Math.floor(Math.random() * (3 - 1) + 1);
                 let delayVal = Math.random() * (0.18 - 0.15) + 0.15;
 
-                if(window.innerWidth < 650){
-                    speedVal = 0;
-                    delayVal = 0
-                }
+                // if(window.innerWidth < 650){
+                //     speedVal = 0;
+                //     delayVal = 0
+                // }
                 el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', `${speedVal}`);
                 el.setAttribute('data-scroll-delay', `${delayVal}`);
