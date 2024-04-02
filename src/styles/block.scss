@@ -12,6 +12,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  @media(max-width: $mobile){
+    background: blueviolet;
+  }
   &-inside{
     width: 64%;
     height: auto;
