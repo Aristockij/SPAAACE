@@ -89,12 +89,17 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    aspect-ratio: 16 / 9;
     overflow: hidden;
+    height: 0;
+    padding-top: 56.25%;
+
+    //overflow: hidden;
     @media(max-width: $mobile){
       align-items: flex-start;
       aspect-ratio: inherit;
-      overflow: visible;
+      overflow: inherit;
+      padding-top: 0;
+      height: auto;
     }
     &-video{
       width: 100%;
