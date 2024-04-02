@@ -109,6 +109,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    min-height: 430px;
+    background: grey;
     //aspect-ratio: 16 / 9;
     //overflow: hidden;
     @media(max-width: $mobile){
