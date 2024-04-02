@@ -8,7 +8,19 @@
   height: 430px;
   background: red;
   margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &-inside{
+    width: 64%;
+    height: 50%;
+    position: absolute;
+    background: green;
+    margin-bottom: -50px;
+  }
 }
+
 .acc{
   opacity: 0;
   transition: .3s;
