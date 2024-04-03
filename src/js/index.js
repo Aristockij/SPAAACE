@@ -85,8 +85,8 @@ function fullContentLoad(){
             monsterCloud.setAttribute('data-scroll-delay', `0.07`);
 
             flowerTop.setAttribute('data-scroll','');
-            flowerTop.setAttribute('data-scroll-speed', `2`);
-            flowerTop.setAttribute('data-scroll-delay', `0.07`);
+            flowerTop.setAttribute('data-scroll-speed', `1`);
+            flowerTop.setAttribute('data-scroll-delay', `0.2`);
 
             flowerBot.setAttribute('data-scroll','');
             flowerBot.setAttribute('data-scroll-speed', `1`);
