@@ -111,14 +111,14 @@
     overflow: hidden;
     @media(max-width: $mobile){
       align-items: flex-start;
-      aspect-ratio: inherit;
+      aspect-ratio: 8 / 10;
       overflow: visible;
     }
     &-video{
       width: 100%;
       @media(max-width: $mobile){
         //display: none;
-        height: 430px;
+        height: 100%;
         overflow: hidden;
         position: relative;
       }
@@ -184,7 +184,7 @@
         z-index: 2;
         @media(max-width: $mobile){
           max-width: 300px;
-          width: 64%;
+          width: 59%;
           margin-bottom: -50px;
         }
       }
