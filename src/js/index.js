@@ -6,6 +6,15 @@ let img_bg = document.querySelectorAll('.acc-bg-img img');
 let img_bot = document.querySelectorAll('.acc-bg-bot img');
 let video_bg = document.querySelectorAll('.video-scroll');
 
+let frogCloud_1 =  document.querySelector('.acc-bg-cloud-mob-1');
+let frogCloud_2 =  document.querySelector('.acc-bg-cloud-mob-2');
+
+let monsterHand =  document.querySelector('.acc-bg-monster_mobile-hand');
+let monsterCloud =  document.querySelector('.acc-bg-monster_mobile-cloud');
+
+let flowerTop =  document.querySelector('.paralax_flower_top');
+let flowerBot =  document.querySelector('.paralax_flower_bottom');
+
 function fullContentLoad(){
     new Promise((resolve)=>{
         resolve();
@@ -58,6 +67,30 @@ function fullContentLoad(){
                 el.setAttribute('data-scroll-speed', `${speedValVideo}`);
                 el.setAttribute('data-scroll-delay', `${delayValVideo}`);
             });
+
+            frogCloud_1.setAttribute('data-scroll','');
+            frogCloud_1.setAttribute('data-scroll-speed', `3`);
+            frogCloud_1.setAttribute('data-scroll-delay', `0.05`);
+
+            frogCloud_2.setAttribute('data-scroll','');
+            frogCloud_2.setAttribute('data-scroll-speed', `1`);
+            frogCloud_2.setAttribute('data-scroll-delay', `0.03`);
+
+            monsterHand.setAttribute('data-scroll','');
+            monsterHand.setAttribute('data-scroll-speed', `1`);
+            monsterHand.setAttribute('data-scroll-delay', `0.03`);
+
+            monsterCloud.setAttribute('data-scroll','');
+            monsterCloud.setAttribute('data-scroll-speed', `3`);
+            monsterCloud.setAttribute('data-scroll-delay', `0.07`);
+
+            flowerTop.setAttribute('data-scroll','');
+            flowerTop.setAttribute('data-scroll-speed', `2`);
+            flowerTop.setAttribute('data-scroll-delay', `0.07`);
+
+            flowerBot.setAttribute('data-scroll','');
+            flowerBot.setAttribute('data-scroll-speed', `1`);
+            flowerBot.setAttribute('data-scroll-delay', `0.1`);
 
             new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
