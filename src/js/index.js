@@ -18,10 +18,7 @@ function fullContentLoad(){
                 let speedVal = '3'
                 let delayVal = '0.04'
 
-                // if(window.innerWidth < 650){
-                //     speedVal = 0;
-                //     delayVal = 0
-                // }
+
 
                 el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', `${speedVal}`);
@@ -32,10 +29,7 @@ function fullContentLoad(){
                 let speedVal = Math.floor(Math.random() * (3 - 1) + 1);
                 let delayVal = Math.random() * (0.18 - 0.15) + 0.15;
 
-                // if(window.innerWidth < 650){
-                //     speedVal = 0;
-                //     delayVal = 0
-                // }
+
                 el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', `${speedVal}`);
                 el.setAttribute('data-scroll-delay', `${delayVal}`);
@@ -49,14 +43,25 @@ function fullContentLoad(){
 
             new LocomotiveScroll({
                 el: document.querySelector('[data-scroll-container]'),
-                // smooth: false,
                 smooth: true,
                 smoothMobile: true,
                 scrollFromAnywhere: true,
+                reloadOnContextChange: true,
+                mobile:{
+                    breakpoint:0,
+                    smooth: true,
+                    multiplier: 15,
+                    class: "is-reveal",
+                },
+                tablet:{
+                    breakpoint:0,
+                    smooth: true,
+                    multiplier: 1,
+                    class: "is-reveal",
+                },
             });
         },1000);
     })
-
 }
 
 fullContentLoad();
