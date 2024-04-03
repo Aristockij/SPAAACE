@@ -90,7 +90,7 @@
     position: relative;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    @media screen and  (max-width: $mobile){
+    @media screen and  (max-width: $mobile) and (max-device-width: 2532px){
       align-items: flex-start;
       aspect-ratio: 8 / 10;
       overflow: visible;
