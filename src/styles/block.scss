@@ -24,7 +24,7 @@
     @media(max-width: $mobile){
       height: auto;
       padding: 200px 15px 50px 15px;
-      border-top: none
+      border-top: none;
 
     }
     &:before {
@@ -90,7 +90,7 @@
     position: relative;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    @media(max-width: $mobile){
+    @media screen and  (max-width: $mobile){
       align-items: flex-start;
       aspect-ratio: 8 / 10;
       overflow: visible;
