@@ -306,6 +306,7 @@
     &-top{
       top: 0;
       @media(max-width: $mobile){
+        top: -15px;
         //display: none !important;
         //opacity: 0;
       }
