@@ -14,10 +14,18 @@ function fullContentLoad(){
             selectors.forEach((el)=>{
                 el.classList.add('active');
             })
-            img_bg.forEach((el) => {
-                let speedVal = '3'
-                let delayVal = '0.04'
 
+            let speedValVideo = '2';
+            let delayValVideo = '0.13';
+
+            img_bg.forEach((el) => {
+                let speedVal = '3';
+                let delayVal = '0.04';
+
+                if(window.innerWidth < 650){
+                    speedVal = ".3";
+                    delayVal = '0.04'
+                }
 
 
                 el.setAttribute('data-scroll','');
@@ -26,9 +34,13 @@ function fullContentLoad(){
             });
 
             img_bot.forEach((el)=>{
-                let speedVal = Math.floor(Math.random() * (3 - 1) + 1);
+                let speedVal = Math.random() * (3 - 1) + 1;
                 let delayVal = Math.random() * (0.18 - 0.15) + 0.15;
 
+                if(window.innerWidth < 650){
+                    speedVal = ".3";
+                    delayVal = '0.04'
+                }
 
                 el.setAttribute('data-scroll','');
                 el.setAttribute('data-scroll-speed', `${speedVal}`);
@@ -36,9 +48,15 @@ function fullContentLoad(){
             });
 
             video_bg.forEach((el)=>{
+
+                if(window.innerWidth < 650){
+                    speedValVideo = "0";
+                    delayValVideo = '0'
+                }
+
                 el.setAttribute('data-scroll','');
-                el.setAttribute('data-scroll-speed', '2');
-                el.setAttribute('data-scroll-delay', '0.13');
+                el.setAttribute('data-scroll-speed', `${speedValVideo}`);
+                el.setAttribute('data-scroll-delay', `${delayValVideo}`);
             });
 
             new LocomotiveScroll({
