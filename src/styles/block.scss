@@ -136,10 +136,16 @@
     &-video{
       width: 100%;
       @media(max-width: $mobile){
-        //display: none;
         height: 100%;
         overflow: hidden;
         position: relative;
+      }
+      &-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
       &-img{
         display: none;
@@ -148,9 +154,6 @@
           align-items: center;
           justify-content: center;
           height: 100%;
-          //width: 100%;
-          //object-fit: cover;
-          //pointer-events: none;
         }
         img{
           width: 125%;
@@ -171,15 +174,23 @@
         video{
           transform: translateY(10px) scale(1);
         }
-
       }
     }
     &-img{
       position: absolute;
       display: block;
       z-index: 2;
-      //@include parallax(.4);
 
+      @media(min-width: $desktop){
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          min-width: 100%;
+          height: auto;
+        }
+      }
       @media(max-width: $tablet){
         height: calc(100% - 25vh);
       }
@@ -212,10 +223,6 @@
       position: absolute;
       display: flex;
       z-index: 1;
-      @media(max-width: $mobile){
-        //display: none;
-        //opacity: 0;
-      }
       img{
         width: 60%;
       }
@@ -304,11 +311,9 @@
       }
     }
     &-top{
-      top: 0;
+      top: -50px;
       @media(max-width: $mobile){
         top: -15px;
-        //display: none !important;
-        //opacity: 0;
       }
       &-cloud{
         right: 0;
