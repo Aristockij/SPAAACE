@@ -184,7 +184,7 @@
       display: block;
       z-index: 2;
 
-      @media(min-width: $desktop){
+      @media(min-width: $screen){
         width: 25vw;
         display: flex;
         align-items: center;
